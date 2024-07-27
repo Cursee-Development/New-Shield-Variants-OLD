@@ -17,6 +17,9 @@
     "entrypoints": {
         "main": [
             "com.cursee.new_shield_variants.NewShieldVariantsFabric"
+        ],
+        "client": [
+            "com.cursee.new_shield_variants.NewShieldVariantsFabricClient"
         ]
     },
     "mixins": [
