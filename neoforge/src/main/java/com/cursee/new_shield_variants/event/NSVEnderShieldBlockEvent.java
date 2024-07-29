@@ -18,7 +18,9 @@ import net.minecraft.world.phys.Vec3;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
-import net.neoforged.neoforge.event.entity.living.ShieldBlockEvent;
+import net.neoforged.neoforge.event.entity.living.LivingShieldBlockEvent;
+//import net.neoforged.neoforge.event.entity.living.ShieldBlockEvent;
+
 
 import java.util.Random;
 
@@ -64,7 +66,7 @@ public class NSVEnderShieldBlockEvent {
     }
 
     @SubscribeEvent
-    public static void shieldBlockEvent(ShieldBlockEvent event) {
+    public static void shieldBlockEvent(LivingShieldBlockEvent event) {
 //        NewShieldVariants.LOGGER.info("\n event.getEntity getDisplayName: \n" + event.getEntity().getDisplayName().toString()); // contains Dev
 //        NewShieldVariants.LOGGER.info("\n event.getDamageSource getEntity getDisplayName: \n" + event.getDamageSource().getEntity().getDisplayName().toString());
 
@@ -75,7 +77,6 @@ public class NSVEnderShieldBlockEvent {
             if (player.getMainHandItem().getItem() == GlobalRegistry.ENDER_SHIELD.get() || player.getOffhandItem().getItem() == GlobalRegistry.ENDER_SHIELD.get()) {
 //                attackingEntity.randomTeleport(10, 2, 10, false);
                 randomTeleport(attackingEntity);
-                event.shieldTakesDamage();
             }
         }
 
