@@ -25,7 +25,7 @@ public class NSVShulkerShieldBlockEvent {
         ) {
             event.player.addEffect(new MobEffectInstance(MobEffects.LEVITATION, (int) (new Random().nextDouble() * 40)));
             event.player.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, (int) (new Random().nextDouble() * 160)));
-            event.player.getItemInHand(InteractionHand.MAIN_HAND).setDamageValue(event.player.getItemInHand(InteractionHand.MAIN_HAND).getDamageValue() - 20);
+//            event.player.getItemInHand(InteractionHand.MAIN_HAND).setDamageValue(event.player.getItemInHand(InteractionHand.MAIN_HAND).getDamageValue() - 20);
         }
         if (
             ( event.player.isBlocking() &&
@@ -33,7 +33,7 @@ public class NSVShulkerShieldBlockEvent {
         ) {
             event.player.addEffect(new MobEffectInstance(MobEffects.LEVITATION, (int) (new Random().nextDouble() * 40)));
             event.player.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, (int) (new Random().nextDouble() * 160)));
-            event.player.getItemInHand(InteractionHand.OFF_HAND).setDamageValue(event.player.getItemInHand(InteractionHand.OFF_HAND).getDamageValue() - 20);
+//            event.player.getItemInHand(InteractionHand.OFF_HAND).setDamageValue(event.player.getItemInHand(InteractionHand.OFF_HAND).getDamageValue() - 20);
 
 
         }

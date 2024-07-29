@@ -191,13 +191,13 @@ public class NewShieldVariantsFabric implements ModInitializer {
 //                            attacker.level().playSound((Player) null, $$0, $$1, $$2, SoundEvents.CHORUS_FRUIT_TELEPORT, SoundSource.NEUTRAL);
 
                             if (player.getMainHandItem().getItem() == NewShieldVariantsRegistryFabric.ENDER_SHIELD) {
-                                player.getMainHandItem().setDamageValue(player.getMainHandItem().getDamageValue() + 1);
+//                                player.getMainHandItem().setDamageValue(player.getMainHandItem().getDamageValue() + 1);
                                 player.stopUsingItem();
 //                                player.getCooldowns().addCooldown(NewShieldVariantsRegistryFabric.ENDER_SHIELD, 20 * 2);
                                 player.setLastHurtByMob(null);
                             }
                             if (player.getOffhandItem().getItem() == NewShieldVariantsRegistryFabric.ENDER_SHIELD) {
-                                player.getOffhandItem().setDamageValue(player.getMainHandItem().getDamageValue() + 1);
+//                                player.getOffhandItem().setDamageValue(player.getMainHandItem().getDamageValue() + 1);
                                 player.stopUsingItem();
 //                                player.getCooldowns().addCooldown(NewShieldVariantsRegistryFabric.ENDER_SHIELD, 20 * 2);
                                 player.setLastHurtByMob(null);
@@ -214,7 +214,7 @@ public class NewShieldVariantsFabric implements ModInitializer {
                 ) {
                     player.addEffect(new MobEffectInstance(MobEffects.LEVITATION, (int) (new Random().nextDouble() * 40)));
                     player.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, (int) (new Random().nextDouble() * 160)));
-                    player.getItemInHand(InteractionHand.MAIN_HAND).setDamageValue(player.getItemInHand(InteractionHand.MAIN_HAND).getDamageValue() + 20);
+//                    player.getItemInHand(InteractionHand.MAIN_HAND).setDamageValue(player.getItemInHand(InteractionHand.MAIN_HAND).getDamageValue() + 20);
                 }
                 if (
                         ( player.isBlocking() &&
@@ -222,7 +222,7 @@ public class NewShieldVariantsFabric implements ModInitializer {
                 ) {
                     player.addEffect(new MobEffectInstance(MobEffects.LEVITATION, (int) (new Random().nextDouble() * 40)));
                     player.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, (int) (new Random().nextDouble() * 160)));
-                    player.getItemInHand(InteractionHand.OFF_HAND).setDamageValue(player.getItemInHand(InteractionHand.OFF_HAND).getDamageValue() + 20);
+//                    player.getItemInHand(InteractionHand.OFF_HAND).setDamageValue(player.getItemInHand(InteractionHand.OFF_HAND).getDamageValue() + 20);
 
 
                 }

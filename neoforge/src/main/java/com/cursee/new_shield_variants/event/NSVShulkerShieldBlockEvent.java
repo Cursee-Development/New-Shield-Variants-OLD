@@ -17,7 +17,7 @@ import java.util.Random;
 public class NSVShulkerShieldBlockEvent {
 
     @SubscribeEvent
-    public static void shieldBlockEvent(PlayerTickEvent event) {
+    public static void shieldBlockEvent(PlayerTickEvent.Pre event) {
 //        NewShieldVariants.LOGGER.info("\n event.getEntity getDisplayName: \n" + event.getEntity().getDisplayName().toString()); // contains Dev
 //        NewShieldVariants.LOGGER.info("\n event.getDamageSource getEntity getDisplayName: \n" + event.getDamageSource().getEntity().getDisplayName().toString());
 
@@ -29,7 +29,7 @@ public class NSVShulkerShieldBlockEvent {
         ) {
             player.addEffect(new MobEffectInstance(MobEffects.LEVITATION, (int) (new Random().nextDouble() * 40)));
             player.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, (int) (new Random().nextDouble() * 160)));
-            player.getItemInHand(InteractionHand.MAIN_HAND).setDamageValue(player.getItemInHand(InteractionHand.MAIN_HAND).getDamageValue() - 20);
+//            player.getItemInHand(InteractionHand.MAIN_HAND).setDamageValue(player.getItemInHand(InteractionHand.MAIN_HAND).getDamageValue() - 20);
         }
         if (
             ( player.isBlocking() &&
@@ -37,7 +37,7 @@ public class NSVShulkerShieldBlockEvent {
         ) {
             player.addEffect(new MobEffectInstance(MobEffects.LEVITATION, (int) (new Random().nextDouble() * 40)));
             player.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, (int) (new Random().nextDouble() * 160)));
-            player.getItemInHand(InteractionHand.OFF_HAND).setDamageValue(player.getItemInHand(InteractionHand.OFF_HAND).getDamageValue() - 20);
+//            player.getItemInHand(InteractionHand.OFF_HAND).setDamageValue(player.getItemInHand(InteractionHand.OFF_HAND).getDamageValue() - 20);
 
 
         }
