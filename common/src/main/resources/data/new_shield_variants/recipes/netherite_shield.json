@@ -6,7 +6,7 @@
       "item": "minecraft:netherite_ingot"
     },
     "o": {
-      "item": "minecraft:dragon_head"
+      "item": "minecraft:iron_ingot"
     }
   },
   "pattern": [
@@ -15,7 +15,7 @@
     " W "
   ],
   "result": {
-    "id": "new_shield_variants:dragon_head_shield"
+    "item": "new_shield_variants:netherite_shield"
   },
   "show_notification": true
 }

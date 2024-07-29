@@ -3,7 +3,7 @@
   "category": "equipment",
   "key": {
     "W": {
-      "item": "minecraft:netherite_ingot"
+      "item": "minecraft:diamond"
     },
     "o": {
       "item": "minecraft:iron_ingot"
@@ -15,7 +15,7 @@
     " W "
   ],
   "result": {
-    "id": "new_shield_variants:netherite_shield"
+    "item": "new_shield_variants:diamond_shield"
   },
   "show_notification": true
 }

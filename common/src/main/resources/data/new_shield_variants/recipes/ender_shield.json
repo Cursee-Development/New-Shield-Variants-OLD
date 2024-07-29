@@ -6,7 +6,7 @@
       "item": "minecraft:netherite_ingot"
     },
     "o": {
-      "item": "minecraft:tnt"
+      "item": "minecraft:ender_pearl"
     }
   },
   "pattern": [
@@ -15,7 +15,7 @@
     " W "
   ],
   "result": {
-    "id": "new_shield_variants:tnt_shield"
+    "item": "new_shield_variants:ender_shield"
   },
   "show_notification": true
 }
